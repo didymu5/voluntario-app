@@ -772,6 +772,13 @@
     eslint-plugin-vue "^4.5.0"
     launch-editor "^2.2.1"
 
+"@vue/cli-plugin-pwa@^3.0.0-rc.3":
+  version "3.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-3.0.0-rc.3.tgz#53e5ead2595a83db0a4c92c294ced5138cce6481"
+  dependencies:
+    launch-editor "^2.2.1"
+    workbox-webpack-plugin "^3.2.0"
+
 "@vue/cli-service@^3.0.0-beta.15":
   version "3.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.0.0-rc.2.tgz#8220ba047ce62f3112bdd5614478b8bc4f052b3f"
@@ -825,6 +832,20 @@
     webpack-dev-server "^3.1.4"
     webpack-merge "^4.1.2"
     yorkie "^1.0.3"
+
+"@vue/cli-shared-utils@^3.0.0-beta.6":
+  version "3.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-3.0.0-rc.3.tgz#5fa73945ad82fc8b6e1e88bd171225c8388a8801"
+  dependencies:
+    chalk "^2.3.0"
+    execa "^0.10.0"
+    joi "^12.0.0"
+    node-ipc "^9.1.1"
+    opn "^5.2.0"
+    ora "^1.3.0"
+    request "^2.83.0"
+    request-promise-native "^1.0.5"
+    string.prototype.padstart "^3.0.0"
 
 "@vue/cli-shared-utils@^3.0.0-rc.2":
   version "3.0.0-rc.2"
@@ -1876,6 +1897,10 @@ commander@2.15.x, commander@^2.13.0, commander@~2.15.0:
 commander@~2.13.0:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
+
+common-tags@^1.4.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -3047,6 +3072,14 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
+fs-extra@^4.0.2:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs-extra@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-6.0.1.tgz#8abc128f7946e310135ddc93b98bddb410e7a34b"
@@ -3869,6 +3902,14 @@ javascript-stringify@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-1.6.0.tgz#142d111f3a6e3dae8f4a9afd77d45855b5a9cce3"
 
+joi@^11.1.1:
+  version "11.4.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-11.4.0.tgz#f674897537b625e9ac3d0b7e1604c828ad913ccb"
+  dependencies:
+    hoek "4.x.x"
+    isemail "3.x.x"
+    topo "2.x.x"
+
 joi@^12.0.0:
   version "12.0.0"
   resolved "https://registry.yarnpkg.com/joi/-/joi-12.0.0.tgz#46f55e68f4d9628f01bbb695902c8b307ad8d33a"
@@ -3940,6 +3981,12 @@ json-schema@0.2.3:
 json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
+
+json-stable-stringify@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/json-stable-stringify/-/json-stable-stringify-1.0.1.tgz#9a759d39c5f2ff503fd5300646ed445f88c4f9af"
+  dependencies:
+    jsonify "~0.0.0"
 
 json-stringify-safe@~5.0.1:
   version "5.0.1"
@@ -4087,6 +4134,10 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
+lodash._reinterpolate@~3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
+
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
@@ -4118,6 +4169,19 @@ lodash.memoize@^4.1.2:
 lodash.snakecase@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.snakecase/-/lodash.snakecase-4.1.1.tgz#39d714a35357147837aefd64b5dcbb16becd8f8d"
+
+lodash.template@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.4.0.tgz#e73a0385c8355591746e020b99679c690e68fba0"
+  dependencies:
+    lodash._reinterpolate "~3.0.0"
+    lodash.templatesettings "^4.0.0"
+
+lodash.templatesettings@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/lodash.templatesettings/-/lodash.templatesettings-4.1.0.tgz#2b4d4e95ba440d915ff08bc899e4553666713316"
+  dependencies:
+    lodash._reinterpolate "~3.0.0"
 
 lodash.transform@^4.6.0:
   version "4.6.0"
@@ -5284,6 +5348,10 @@ prettier@^1.13.0:
   version "1.13.5"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.13.5.tgz#7ae2076998c8edce79d63834e9b7b09fead6bfd0"
 
+pretty-bytes@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/pretty-bytes/-/pretty-bytes-4.0.2.tgz#b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9"
+
 pretty-error@^2.0.2:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/pretty-error/-/pretty-error-2.1.1.tgz#5f4f87c8f91e5ae3f3ba87ab4cf5e03b1a17f1a3"
@@ -5570,6 +5638,10 @@ regexpu-core@^4.1.3, regexpu-core@^4.1.4:
     regjsparser "^0.3.0"
     unicode-match-property-ecmascript "^1.0.4"
     unicode-match-property-value-ecmascript "^1.0.2"
+
+register-service-worker@^1.0.0:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/register-service-worker/-/register-service-worker-1.4.1.tgz#4b4c9b4200fc697942c6ae7d611349587b992b2f"
 
 regjsgen@^0.2.0:
   version "0.2.0"
@@ -6647,6 +6719,12 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-cli-plugin-pwa@^1.0.0-alpha.1:
+  version "1.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-pwa/-/vue-cli-plugin-pwa-1.0.0-alpha.1.tgz#6fae6ffe0be3cf2c5922af92c2f5263aa8c73ba6"
+  dependencies:
+    "@vue/cli-shared-utils" "^3.0.0-beta.6"
+
 vue-cli-plugin-vuetify@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-vuetify/-/vue-cli-plugin-vuetify-0.1.5.tgz#e17c9354f4184eca116dd98a309bb03cf7d3bbc0"
@@ -6885,6 +6963,108 @@ wide-align@^1.1.0:
 wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
+
+workbox-background-sync@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-background-sync/-/workbox-background-sync-3.3.0.tgz#87e212715391d2002274f526e77851cfab86ed8a"
+  dependencies:
+    workbox-core "^3.3.0"
+
+workbox-broadcast-cache-update@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-broadcast-cache-update/-/workbox-broadcast-cache-update-3.3.0.tgz#ce4fa56656de5024f567c06f6614e36961c30c0f"
+  dependencies:
+    workbox-core "^3.3.0"
+
+workbox-build@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-build/-/workbox-build-3.3.0.tgz#7f3fa9de9714dab318122933b9615a38d94d643d"
+  dependencies:
+    babel-runtime "^6.26.0"
+    common-tags "^1.4.0"
+    fs-extra "^4.0.2"
+    glob "^7.1.2"
+    joi "^11.1.1"
+    lodash.template "^4.4.0"
+    pretty-bytes "^4.0.2"
+    workbox-background-sync "^3.3.0"
+    workbox-broadcast-cache-update "^3.3.0"
+    workbox-cache-expiration "^3.3.0"
+    workbox-cacheable-response "^3.3.0"
+    workbox-core "^3.3.0"
+    workbox-google-analytics "^3.3.0"
+    workbox-precaching "^3.3.0"
+    workbox-range-requests "^3.3.0"
+    workbox-routing "^3.3.0"
+    workbox-strategies "^3.3.0"
+    workbox-streams "^3.3.0"
+    workbox-sw "^3.3.0"
+
+workbox-cache-expiration@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-cache-expiration/-/workbox-cache-expiration-3.3.0.tgz#fe9cfde8e8168fa25ff778c6e2eda54181f58506"
+  dependencies:
+    workbox-core "^3.3.0"
+
+workbox-cacheable-response@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-cacheable-response/-/workbox-cacheable-response-3.3.0.tgz#b7d3904fa30baf7da271d73dd2f0da7518378acf"
+  dependencies:
+    workbox-core "^3.3.0"
+
+workbox-core@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-3.3.0.tgz#3606223514a85a0935550ed15d973c12b12ff680"
+
+workbox-google-analytics@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-google-analytics/-/workbox-google-analytics-3.3.0.tgz#380ecefc24040db9e191b2789bced19ad61c8ccb"
+  dependencies:
+    workbox-background-sync "^3.3.0"
+    workbox-core "^3.3.0"
+    workbox-routing "^3.3.0"
+    workbox-strategies "^3.3.0"
+
+workbox-precaching@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-precaching/-/workbox-precaching-3.3.0.tgz#471bbc26bd3e92b24fd9d636842cf3f358302bd2"
+  dependencies:
+    workbox-core "^3.3.0"
+
+workbox-range-requests@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-range-requests/-/workbox-range-requests-3.3.0.tgz#9703cb91e9ea9104ed09c545a87e25f41002ddce"
+  dependencies:
+    workbox-core "^3.3.0"
+
+workbox-routing@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-routing/-/workbox-routing-3.3.0.tgz#8184d0159c8c4e4c9dd7a0da08e28e579e372319"
+  dependencies:
+    workbox-core "^3.3.0"
+
+workbox-strategies@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-strategies/-/workbox-strategies-3.3.0.tgz#0681df07ebf4628454aa91317aa87de2d1ded6c6"
+  dependencies:
+    workbox-core "^3.3.0"
+
+workbox-streams@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-streams/-/workbox-streams-3.3.0.tgz#7591e37a08bf65b32d1db076b86900a8a4b7d02c"
+  dependencies:
+    workbox-core "^3.3.0"
+
+workbox-sw@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-sw/-/workbox-sw-3.3.0.tgz#1a9fd728951c76b86225b472f9e37088913c9bc4"
+
+workbox-webpack-plugin@^3.2.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/workbox-webpack-plugin/-/workbox-webpack-plugin-3.3.0.tgz#d0c623139dec897388f115e5b8d5209661db2841"
+  dependencies:
+    json-stable-stringify "^1.0.1"
+    workbox-build "^3.3.0"
 
 worker-farm@^1.5.2:
   version "1.6.0"
