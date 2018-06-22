@@ -27,12 +27,13 @@
 </template>
 <script>
 export default {
-    name: 'EventCard',
-    props: ['title', 'eventImage', 'description', 'date'],
-    data: () => ({
-        show: false,
-    }),
-    created() {
-    }
+  name: 'EventCard',
+  props: ['title', 'eventImage', 'description', 'date'],
+  data: () => ({
+    show: false,
+  }),
+  created() {
+    console.log(this.eventImage)
+  }
 }
 </script>
