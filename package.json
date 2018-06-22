@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuetify": "^1.0.19"
@@ -16,10 +17,12 @@
     "@babel/polyfill": "^7.0.0-beta.49",
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
+    "@vue/cli-plugin-pwa": "^3.0.0-rc.3",
     "@vue/cli-service": "^3.0.0-beta.15",
     "babel-plugin-transform-imports": "^1.4.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
+    "vue-cli-plugin-pwa": "^1.0.0-alpha.1",
     "vue-cli-plugin-vuetify": "^0.1.5",
     "vue-template-compiler": "^2.5.16"
   },
@@ -34,7 +37,10 @@
     ],
     "rules": {
       "no-console": 0,
-      "indent": ["error", 2]
+      "indent": [
+	"error",
+	2
+      ]
     },
     "parserOptions": {
       "parser": "babel-eslint"
