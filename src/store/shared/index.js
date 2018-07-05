@@ -1,22 +1,24 @@
-import auth from 'firebase/auth'
 
 export default {
   state: {
     loading: false,
     error: null
   }, 
-  mutaions: {
+  mutations: {
     setLoading(state, payload) {
       state.loading = payload
     },
     setError(state, payload) {
       state.error = payload
     },
-    clearError(state, payload) {
+    clearError(state) {
       state.error = null
     }
   },
   actions: {
+    setLoading({commit}, payload) {
+      commit('setLoading', payload)
+    },
     clearError({commit}){
       commit('clearError')
     },
