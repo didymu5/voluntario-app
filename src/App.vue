@@ -26,7 +26,7 @@
         <router-view/>
     </v-content>
     <v-footer :fixed="fixed" app>
-        <span>&copy; 2017</span>
+	<span>&copy; 2018</span>   status: <div v-if="isLoggedin">Am logged in</div>
     </v-footer>
 </v-app>
 </template>
@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       clipped: true,
-      drawer: true,
+      drawer: false,
       fixed: false,
       items: [
         {
@@ -47,8 +47,17 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: true,
-      title: "Voluntario"
+      title: "Voluntario",
+      userInfo: this.$store.getters.user
     };
+  },
+  created() {
+
+  },
+  computed: {
+    isLoggedin() {
+      return this.$store.getters.user !== null && this.$store.getters.user !== undefined
+    }
   }
 };
 </script>
