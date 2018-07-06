@@ -24,7 +24,11 @@ export default {
     }
   },
   created() {
-    
+    this.$store.commit('setLoading', false)
+    if(!this.isLoggedin) {
+      // this.$store.commit('setLoading', true)
+      console.log(this.$store.getters.user)
+    }
   },
   computed: {
     isLoggedin() {
