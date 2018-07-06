@@ -5,7 +5,8 @@ import About from './views/About.vue'
 import Events from './views/Events.vue'
 import Login from './views/Login.vue'
 
-import AuthGuard from './auth-guard'
+// import AuthGuard from './auth-guard'
+import {auth} from 'firebase'
 
 Vue.use(Router)
 
@@ -25,6 +26,9 @@ export default new Router({
       path: '/events',
       name: 'events',
       component: Events,
+      meta: {
+        requiresAuth: true
+      },
       beforeEnter: AuthGuard
     },
     {
@@ -35,3 +39,13 @@ export default new Router({
   ],
   mode: 'history'
 })
+const AuthGuard = (to, from, next) => {
+  const reqAuth = to.matched.some(record => record.meta.requiresAuth)
+  const currentUser =  auth().currentUser
+  console.log(currentUser)
+  if(reqAuth && currentUser) {
+    next()
+  } else {
+    next('/login')
+  }
+}
