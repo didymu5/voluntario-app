@@ -9,7 +9,7 @@
       enable-resize-watcher 
       fixed app>
       <v-list>
-	<v-list-tile value="true" v-for="(item, i) in items" :key="i" :href="item.href">
+        <v-list-tile value="true" v-for="(item, i) in items" :key="i" :href="item.href">
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
           </v-list-tile-action>
@@ -23,9 +23,9 @@
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
        <v-spacer></v-spacer>
-	<div v-if="isLoggedin" class="user-info-space">
-	  {{user.name}}
-	</div>
+        <div v-if="isLoggedin" class="user-info-space">
+          {{user.name}}
+        </div>
     </v-toolbar>
     <v-content>
         <router-view/>
@@ -52,14 +52,14 @@ export default {
       fixed: false,
       items: [
         {
-	  icon: "event_note",
-	  title: "Events",
-	  href: "/events"
-	},
-	{
-	  icon: "home",
-	  title: "Home",
-	  href: "/"
+          icon: "event_note",
+          title: "Events",
+          href: "/events"
+        },
+        {
+          icon: "home",
+          title: "Home",
+          href: "/"
         }
       ],
       miniVariant: false,
