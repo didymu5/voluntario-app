@@ -1,8 +1,10 @@
-import store from './store'
+import {auth} from 'firebase'
 
 export default (to, from, next) => {
-  console.log(to)
-  if(store.getters.user) {
+  const reqAuth = to.matched.some(record => record.meta.requiresAuth)
+  const currentUser =  auth().currentUser
+  console.log(currentUser)
+  if(reqAuth && currentUser) {
     next()
   } else {
     next('/login')
