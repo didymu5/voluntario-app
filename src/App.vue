@@ -19,7 +19,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar app :clipped-left="clipped">
+    <v-toolbar app :clipped-left="clipped" elevation-1>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
        <v-spacer></v-spacer>
@@ -39,7 +39,6 @@
 import {
   VProgressLinear
 } from 'vuetify'
-
 export default {
   name: "App",
   components: {
