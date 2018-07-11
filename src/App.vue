@@ -1,12 +1,12 @@
 <template>
   <v-app>
     <v-progress-linear class="v-preogress-linear--app" v-if="isLoading" height="3" value="10" indeterminate></v-progress-linear>
-    <v-navigation-drawer 
-      persistent 
-      :mini-variant="miniVariant" 
-      :clipped="clipped" 
-      v-model="drawer" 
-      enable-resize-watcher 
+    <v-navigation-drawer
+      persistent
+      :mini-variant="miniVariant"
+      :clipped="clipped"
+      v-model="drawer"
+      enable-resize-watcher
       fixed app>
       <v-list>
         <v-list-tile value="true" v-for="(item, i) in items" :key="i" :href="item.href">
@@ -28,10 +28,10 @@
         </div>
     </v-toolbar>
     <v-content>
-        <router-view/>
+      <router-view/>
     </v-content>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2018</span>   status: <div v-if="isLoggedin">Am logged in</div> is loading: {{isLoading}}
+      <span>&copy; 2018</span>   status: <div v-if="isLoggedin">Am logged in</div>
     </v-footer>
 </v-app>
 </template>
