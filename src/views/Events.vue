@@ -1,25 +1,23 @@
 <template>
-  <v-layout row wrap>
-      <v-flex xs12 sm4 v-for="event in eventList" v-bind:key="event.index">
-        <EventCard :title="event.title" :date="event.date" :eventImage="event.eventImage" />
-      </v-flex>
-    </v-layout>
+  <div>
+    <event-list :events="eventList" />
+  </div>
 </template>
 
 <script>
-import Events from './../store/mock/events';
-import EventCard from './../components/EventCard';
+import EventList from './../components/EventList'
 export default {
   name: 'Events',
   components: {
-    EventCard
+    EventList
   },
   data: () => ({
-    show: false,
-    eventList: Events
+    eventList: []
   }),
-  created: function () {
-    // console.log(Events)
+  created() {
+    this.eventList = this.$store.getters.allEvents
+
+    this.$store.dispatch('setLoading', false)
   }
 }
 </script>
