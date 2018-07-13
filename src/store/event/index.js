@@ -11,13 +11,7 @@ export default {
   actions: {
     createEvent({commit}, payload) {
       const anEvent = {
-        title: payload.title,
-        date: payload.date,
-        eventImage: payload.eventImage,
-        numberOfVolunteers: payload.numberOfVolunteers,
-        confirmedVolunteers: payload.confirmedVolunteers,
-        description: payload.description,
-        isActive: payload.isActive
+	...payload
       }
       commit('createEvent', anEvent)
     }
