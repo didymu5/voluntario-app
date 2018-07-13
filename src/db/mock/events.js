@@ -1,5 +1,6 @@
 export default [
   {
+    id: 'p9asdfnasfd8hsafsa',
     title: 'Sunday service: Mark is awesome',
     date: 'June 17',
     eventImage: 'https://picsum.photos/400/350/?random',
@@ -9,6 +10,7 @@ export default [
     isActive: true
   },
   {
+    id: 'h7ph23723dhoasdhfa',
     title: 'Sunday service: Mark is still awesome',
     date: 'June 24',
     eventImage: 'https://picsum.photos/400/350/?random',
@@ -18,6 +20,7 @@ export default [
     isActive: true
   },
   {
+    id: 'bcxmv878xch87b',
     title: 'Sunday service: Criag is even more awesome',
     date: 'July 1',
     eventImage: 'https://picsum.photos/400/350/?random',
@@ -27,6 +30,7 @@ export default [
     isActive: true
   },
   {
+    id: 'bp98ahdsp9f8h972',
     title: 'Sunday service: Criag is still even more awesome',
     date: 'July 1',
     eventImage: 'https://picsum.photos/400/350/?random',
