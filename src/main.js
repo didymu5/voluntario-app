@@ -44,7 +44,6 @@ new Vue({
   method: {
     login(user) {
       this.$store.dispatch('autoSignIn', user)
-      this.$store.dispatch('hello', 'hi there')
     }
   },
   render: h => h(App)

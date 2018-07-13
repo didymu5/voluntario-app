@@ -25,9 +25,9 @@
        <v-spacer></v-spacer>
         <div v-if="isLoggedin" class="user-info-space">
           {{user.name}}
-	        <v-avatar size="35px">
-	          <img v-if="user.photoUrl" width="20" :src="user.photoUrl" :alt="user.name">
-	        </v-avatar>
+	  <v-avatar size="35px">
+	    <img v-if="user.photoUrl" width="20" :src="user.photoUrl" :alt="user.name">
+	  </v-avatar>
         </div>
     </v-toolbar>
     <v-content>
