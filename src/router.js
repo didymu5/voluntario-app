@@ -3,9 +3,9 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Events from './views/Events.vue'
+import Event from './components/Event.vue'
 import Login from './views/Login.vue'
 
-// import AuthGuard from './auth-guard'
 import {auth} from 'firebase'
 
 Vue.use(Router)
@@ -20,16 +20,21 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
     },
     {
-      path: '/events',
+      path: '/events/',
       name: 'events',
       component: Events,
       meta: {
         requiresAuth: true
       },
       beforeEnter: AuthGuard
+    },
+    {
+      path: '/event/:id',
+      name: 'event',
+      component: Event,
     },
     {
       path: '/login',
@@ -42,7 +47,6 @@ export default new Router({
 const AuthGuard = (to, from, next) => {
   const reqAuth = to.matched.some(record => record.meta.requiresAuth)
   const currentUser =  auth().currentUser
-  console.log(currentUser)
   if(reqAuth && currentUser) {
     next()
   } else {

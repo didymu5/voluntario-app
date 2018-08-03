@@ -29,7 +29,7 @@ export default {
   }),
   methods: {
     createPathToEvent() {
-      let pathing = this.id ? { path: "/events/" + this.id } : null
+      let pathing = this.id ? { path: "/event/" + this.id } : null
       return pathing;
     }
   }

@@ -23,12 +23,12 @@
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title v-text="title"></v-toolbar-title>
        <v-spacer></v-spacer>
-        <div v-if="isLoggedin" class="user-info-space">
-          {{user.name}}
-	  <v-avatar size="35px">
-	    <img v-if="user.photoUrl" width="20" :src="user.photoUrl" :alt="user.name">
-	  </v-avatar>
-        </div>
+      <div v-if="isLoggedin" class="user-info-space">
+        {{user.name}}
+        <v-avatar size="35px">
+          <img v-if="user.photoUrl" width="20" :src="user.photoUrl" :alt="user.name">
+        </v-avatar>
+      </div>
     </v-toolbar>
     <v-content>
       <router-view/>

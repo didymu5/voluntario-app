@@ -10,9 +10,7 @@ export default {
   },
   actions: {
     createEvent({commit}, payload) {
-      const anEvent = {
-	...payload
-      }
+      const anEvent = {...payload}
       commit('createEvent', anEvent)
     }
   },
